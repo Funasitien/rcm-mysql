@@ -16,14 +16,14 @@ version = module_version
 
 repositories {
     mavenCentral()
-    maven { url = "https://maven.mrnavastar.me/snapshots/" }
-    maven { url = "https://maven.mrnavastar.me/releases/" }
+    maven { url = "https://java.funa.dev/snapshots/" }
+    maven { url = "https://java.funa.dev/releases/" }
 }
 
 dependencies {
-    compileOnly 'group.aelysium.rustyconnector:core:0.9.1'
+    compileOnly 'group.aelysium.rustyconnector:core:' + rustyconnector_version
 
-    shadow 'com.mysql:mysql-connector-j:9.2.0'
+    shadow 'com.mysql:mysql-connector-j:9.3.0'
     shadow 'com.zaxxer:HikariCP:5.0.0'
     compileOnly 'net.kyori:adventure-api:4.17.0'
 }
